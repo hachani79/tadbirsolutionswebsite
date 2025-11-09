@@ -9,43 +9,43 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --foreground: 210 50% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 210 50% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 210 50% 12%;
 
-    --primary: 262 83% 58%;
+    --primary: 158 41% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 262 83% 48%;
+    --primary-hover: 158 41% 45%;
 
-    --secondary: 280 65% 60%;
+    --secondary: 210 50% 12%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 10% 46%;
 
-    --accent: 199 89% 48%;
+    --accent: 158 41% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 262 83% 58%;
+    --border: 210 15% 90%;
+    --input: 210 15% 90%;
+    --ring: 158 41% 55%;
 
     --radius: 1rem;
     
-    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(280 65% 60%));
-    --gradient-secondary: linear-gradient(135deg, hsl(199 89% 48%), hsl(262 83% 58%));
-    --gradient-hero: linear-gradient(180deg, hsl(262 83% 98%), hsl(0 0% 100%));
+    --gradient-primary: linear-gradient(135deg, hsl(158 41% 55%), hsl(158 41% 45%));
+    --gradient-secondary: linear-gradient(135deg, hsl(210 50% 12%), hsl(210 50% 20%));
+    --gradient-hero: linear-gradient(180deg, hsl(210 50% 98%), hsl(0 0% 100%));
     
-    --shadow-soft: 0 4px 24px -8px hsl(262 83% 58% / 0.2);
-    --shadow-medium: 0 12px 48px -12px hsl(262 83% 58% / 0.3);
-    --shadow-glow: 0 0 40px hsl(262 83% 58% / 0.15);
+    --shadow-soft: 0 4px 24px -8px hsl(158 41% 55% / 0.2);
+    --shadow-medium: 0 12px 48px -12px hsl(158 41% 55% / 0.3);
+    --shadow-glow: 0 0 40px hsl(158 41% 55% / 0.25);
     
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -67,34 +67,34 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222 47% 8%;
+    --background: 210 50% 12%;
     --foreground: 0 0% 98%;
 
-    --card: 222 47% 11%;
+    --card: 210 50% 15%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 222 47% 11%;
+    --popover: 210 50% 15%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 262 83% 58%;
+    --primary: 158 41% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 262 83% 48%;
+    --primary-hover: 158 41% 45%;
 
-    --secondary: 280 65% 60%;
+    --secondary: 210 50% 20%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 222 47% 15%;
-    --muted-foreground: 220 9% 65%;
+    --muted: 210 50% 18%;
+    --muted-foreground: 210 10% 65%;
 
-    --accent: 199 89% 48%;
+    --accent: 158 41% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 222 47% 18%;
-    --input: 222 47% 18%;
-    --ring: 262 83% 58%;
+    --border: 210 50% 20%;
+    --input: 210 50% 20%;
+    --ring: 158 41% 55%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -121,6 +121,14 @@ All colors MUST be HSL.
     animation: fade-in 0.8s ease-out;
   }
   
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
   @keyframes fade-in {
     from {
       opacity: 0;
@@ -129,6 +137,26 @@ All colors MUST be HSL.
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
     }
   }
 }

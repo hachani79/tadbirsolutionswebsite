@@ -2,14 +2,14 @@ import { Rocket } from "lucide-react";
 
 export const ComingSoon = () => {
   return (
-    <section className="py-20 sm:py-32 bg-gradient-to-b from-muted/30 to-background">
+    <section className="py-12 sm:py-16 bg-gradient-to-b from-muted/30 to-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center p-4 bg-primary/10 rounded-2xl mb-8">
+          <div className="inline-flex items-center justify-center p-4 bg-primary/10 rounded-2xl mb-6">
             <Rocket className="h-10 w-10 text-primary" />
           </div>
           
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight">
             Coming Soon
           </h2>
           

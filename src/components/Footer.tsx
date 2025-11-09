@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button";
 export const Footer = () => {
   return (
     <footer className="border-t border-border bg-muted/20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="text-center mb-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="text-center mb-6">
           <a href="mailto:admin@tadbirsolutions.com">
             <Button size="lg" className="group text-base sm:text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all">
-              Subscribe for Updates
+              Subscribe — we'll let you know when the app will be ready!
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </a>
