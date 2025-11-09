@@ -16,7 +16,7 @@ export const Hero = () => {
           </h1>
           
           <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-0 max-w-3xl mx-auto font-medium">
-            Launching Soon: Tadbir Prothese – Our first step toward easy digitalization
+            Tadbir Solutions is committed to creating a suite of lightweight, user-friendly apps for different sectors—always keeping affordability and simplicity at the core of everything we build.
           </p>
         </div>
       </div>

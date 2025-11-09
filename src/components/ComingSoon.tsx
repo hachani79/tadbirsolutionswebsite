@@ -14,7 +14,7 @@ export const ComingSoon = () => {
           </h2>
           
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-            Tadbir Solutions is committed to creating a suite of lightweight, user-friendly apps for different sectors—always keeping affordability and simplicity at the core of everything we build.
+            
           </p>
         </div>
       </div>

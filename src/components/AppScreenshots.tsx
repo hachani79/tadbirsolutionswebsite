@@ -5,7 +5,7 @@ import appDashboard from "@/assets/app-dashboard.jpg";
 export const AppScreenshots = () => {
   const screenshots = [
     { image: appMain, title: "Login Screen", description: "Secure authentication with biometric support" },
-    { image: appCommandes, title: "Order Management", description: "Track and manage all prosthesis orders" },
+    { image: appCommandes, title: "Order Management", description: "Track and manage all Dentist orders" },
     { image: appDashboard, title: "Admin Dashboard", description: "Real-time insights and analytics" },
   ];
 
@@ -20,7 +20,7 @@ export const AppScreenshots = () => {
             Experience the simplicity and power of our first digital solution
           </p>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Our first app, Tadbir Prothese, is designed specifically for dental labs to streamline prosthesis order management. 
+            Our first app, Tadbir Prothese, is designed specifically for dental labs to streamline Dentist order management. 
             From order tracking to delivery scheduling, everything you need is at your fingertips.
           </p>
         </div>
@@ -34,11 +34,11 @@ export const AppScreenshots = () => {
             >
               <div className="relative w-full max-w-[280px] aspect-[9/19] rounded-[3rem] bg-gradient-to-br from-secondary/10 to-primary/10 p-3 shadow-2xl hover:shadow-glow transition-all duration-500 hover:scale-105 animate-float" style={{ animationDelay: `${index * 0.5}s` }}>
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-7 bg-secondary/80 rounded-b-3xl z-10" />
-                <div className="w-full h-full rounded-[2.5rem] bg-background overflow-hidden border-4 border-secondary/20">
+                <div className="w-full h-full rounded-[2.5rem] bg-background overflow-hidden border-4 border-secondary/20 flex items-center justify-center">
                   <img 
                     src={screenshot.image} 
                     alt={screenshot.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain p-2"
                   />
                 </div>
               </div>
