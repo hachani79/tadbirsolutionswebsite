@@ -32,13 +32,13 @@ export const AppScreenshots = () => {
               className="flex flex-col items-center group animate-fade-up"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
-              <div className="relative w-full max-w-[280px] aspect-[9/19] rounded-[3rem] bg-gradient-to-br from-secondary/10 to-primary/10 p-3 shadow-2xl hover:shadow-glow transition-all duration-500 hover:scale-105 animate-float" style={{ animationDelay: `${index * 0.5}s` }}>
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-7 bg-secondary/80 rounded-b-3xl z-10" />
-                <div className="w-full h-full rounded-[2.5rem] bg-background overflow-hidden border-4 border-secondary/20 flex items-center justify-center">
+              <div className="relative w-full max-w-[260px] aspect-[9/19.5] rounded-[2.5rem] bg-gradient-to-br from-secondary/10 to-primary/10 p-2 shadow-2xl hover:shadow-glow transition-all duration-500 hover:scale-105 animate-float" style={{ animationDelay: `${index * 0.5}s` }}>
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-6 bg-secondary/80 rounded-b-2xl z-10" />
+                <div className="w-full h-full rounded-[2.2rem] bg-black overflow-hidden border-2 border-secondary/20 flex items-center justify-center p-1">
                   <img 
                     src={screenshot.image} 
                     alt={screenshot.title}
-                    className="w-full h-full object-contain p-2"
+                    className="w-full h-full object-contain rounded-[2rem]"
                   />
                 </div>
               </div>

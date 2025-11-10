@@ -15,9 +15,19 @@ export const Hero = () => {
             Empowering SMBs with Digital Solutions
           </h1>
           
-          <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-0 max-w-3xl mx-auto font-medium">
+          <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-8 max-w-3xl mx-auto font-medium">
             Tadbir Solutions is committed to creating a suite of lightweight, user-friendly apps for different sectors—always keeping affordability and simplicity at the core of everything we build.
           </p>
+          
+          <div className="max-w-4xl mx-auto mt-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-center tracking-tight">
+              Our Journey
+            </h2>
+            
+            <p className="text-base sm:text-lg text-muted-foreground text-center leading-relaxed">
+              Tadbir Solutions was born from a simple belief: every small business deserves access to digitalization without complexity or high costs. We saw how many SMBs struggle with outdated processes and expensive tools, and we wanted to change that.
+            </p>
+          </div>
         </div>
       </div>
     </section>
