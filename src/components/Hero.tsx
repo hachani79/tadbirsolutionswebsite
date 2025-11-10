@@ -6,7 +6,7 @@ export const Hero = () => {
       <img 
         src={logoImage} 
         alt="Tadbir Solutions Logo" 
-        className="absolute top-6 right-6 h-14 sm:h-16 md:h-20 w-auto z-20"
+        className="absolute top-6 left-6 h-28 sm:h-32 md:h-40 w-auto z-20"
       />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
