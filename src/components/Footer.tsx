@@ -1,5 +1,6 @@
 import { Instagram, Mail, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@/assets/logo.jpeg";
 
 export const Footer = () => {
   return (
@@ -8,10 +9,13 @@ export const Footer = () => {
         <div className="text-center mb-6">
           <a href="mailto:admin@tadbirsolutions.com">
             <Button size="lg" className="group text-base sm:text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all">
-              Subscribe — we'll let you know when the app will be ready!
+              Subscribe
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </a>
+          <p className="text-muted-foreground text-sm mt-3">
+            We'll let you know when the app will be ready!
+          </p>
         </div>
         
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -40,6 +44,16 @@ export const Footer = () => {
           <p className="text-muted-foreground text-sm">
             © 2025 Tadbir Solutions
           </p>
+        </div>
+      </div>
+      
+      <div className="w-full bg-muted/40 border-t border-border py-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+          <img 
+            src={logoImage} 
+            alt="Tadbir Solutions Logo" 
+            className="h-16 sm:h-20 md:h-24 w-auto"
+          />
         </div>
       </div>
     </footer>
