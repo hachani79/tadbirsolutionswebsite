@@ -1,4 +1,5 @@
 import { Rocket } from "lucide-react";
+import googlePlayBadge from "@/assets/google-play-badge.png";
 
 export const ComingSoon = () => {
   return (
@@ -13,9 +14,13 @@ export const ComingSoon = () => {
             Coming Soon
           </h2>
           
-          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-            
-          </p>
+          <div className="flex justify-center mt-8">
+            <img 
+              src={googlePlayBadge} 
+              alt="Get it on Google Play" 
+              className="h-16 sm:h-20 w-auto hover:scale-105 transition-transform cursor-pointer"
+            />
+          </div>
         </div>
       </div>
     </section>

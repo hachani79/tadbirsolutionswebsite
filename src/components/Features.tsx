@@ -5,17 +5,17 @@ export const Features = () => {
     {
       icon: Smartphone,
       title: "Simplify Technology",
-      description: "Build intuitive tools that make digital adoption effortless for Algerian businesses, no matter their size or technical expertise.",
+      description: "Build intuitive tools that make digital adoption effortless for local businesses, no matter their size or technical expertise.",
     },
     {
       icon: Wallet,
       title: "Affordable Solutions",
-      description: "Deliver cost-effective apps tailored to Algeria's market realities, helping SMBs grow without heavy investments.",
+      description: "Deliver cost-effective apps helping local businesses grow without heavy investments.",
     },
     {
       icon: TrendingUp,
       title: "Empower Local Businesses",
-      description: "Enable Algerian SMBs to thrive in the digital age with solutions designed to solve real operational challenges.",
+      description: "Enable local businesses to thrive in the digital age with solutions designed to solve real operational challenges.",
     },
   ];
 
