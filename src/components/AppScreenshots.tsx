@@ -9,13 +9,15 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const AppScreenshots = () => {
+  const { t } = useLanguage();
   const screenshots = [
-    { image: appDentist, title: "Dentist Management", description: "Manage relationships and contacts with dentists" },
-    { image: appDashboard, title: "Dashboard", description: "Real-time insights and analytics" },
-    { image: appRendezVous, title: "Appointments", description: "Schedule and track appointments" },
-    { image: appCommande, title: "Create Orders", description: "Easily create and manage new orders" },
+    { image: appDentist, titleKey: "app.dentist", descriptionKey: "app.dentistDesc" },
+    { image: appDashboard, titleKey: "app.dashboard", descriptionKey: "app.dashboardDesc" },
+    { image: appRendezVous, titleKey: "app.appointments", descriptionKey: "app.appointmentsDesc" },
+    { image: appCommande, titleKey: "app.orders", descriptionKey: "app.ordersDesc" },
   ];
 
   return (
@@ -23,14 +25,13 @@ export const AppScreenshots = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-foreground tracking-tight">
-            Tadbir Prothese
+            {t('app.title')}
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-            Experience the simplicity and power of our first digital solution
+            {t('app.subtitle')}
           </p>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Our first app, Tadbir Prothese, is designed specifically for dental labs to streamline Dentist order management. 
-            From order tracking to delivery scheduling, everything you need is at your fingertips.
+            {t('app.description')}
           </p>
         </div>
         
@@ -50,14 +51,14 @@ export const AppScreenshots = () => {
                     <div className="w-full h-full rounded-[2.2rem] bg-black overflow-hidden border-2 border-secondary/20 flex items-center justify-center p-1">
                       <img 
                         src={screenshot.image} 
-                        alt={screenshot.title}
+                        alt={t(screenshot.titleKey)}
                         className="w-full h-full object-cover rounded-[2rem]"
                       />
                     </div>
                   </div>
                   <div className="mt-6 text-center">
-                    <h3 className="text-lg font-semibold text-foreground mb-2">{screenshot.title}</h3>
-                    <p className="text-sm text-muted-foreground">{screenshot.description}</p>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">{t(screenshot.titleKey)}</h3>
+                    <p className="text-sm text-muted-foreground">{t(screenshot.descriptionKey)}</p>
                   </div>
                 </div>
               </CarouselItem>

@@ -1,20 +1,22 @@
 import { Instagram, Mail, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoImage from "@/assets/logo.jpeg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const Footer = () => {
+  const { t } = useLanguage();
   return (
     <footer className="border-t border-border bg-muted/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="text-center mb-6">
           <a href="mailto:admin@tadbirsolutions.com">
             <Button size="lg" className="group text-base sm:text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all">
-              Subscribe
+              {t('footer.subscribe')}
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </a>
           <p className="text-muted-foreground text-sm mt-3">
-            We'll let you know when the app will be ready!
+            {t('footer.subscribeText')}
           </p>
         </div>
         

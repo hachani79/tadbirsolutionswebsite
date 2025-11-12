@@ -1,21 +1,23 @@
 import { Smartphone, Wallet, TrendingUp } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const Features = () => {
+  const { t } = useLanguage();
   const features = [
     {
       icon: Smartphone,
-      title: "Simplify Technology",
-      description: "Build intuitive tools that make digital adoption effortless for local businesses, no matter their size or technical expertise.",
+      titleKey: "features.simplify",
+      descriptionKey: "features.simplifyDesc",
     },
     {
       icon: Wallet,
-      title: "Affordable Solutions",
-      description: "Deliver cost-effective apps helping local businesses grow without heavy investments.",
+      titleKey: "features.affordable",
+      descriptionKey: "features.affordableDesc",
     },
     {
       icon: TrendingUp,
-      title: "Empower Local Businesses",
-      description: "Enable local businesses to thrive in the digital age with solutions designed to solve real operational challenges.",
+      titleKey: "features.empower",
+      descriptionKey: "features.empowerDesc",
     },
   ];
 
@@ -35,10 +37,10 @@ export const Features = () => {
                   <Icon className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3">
-                  {feature.title}
+                  {t(feature.titleKey)}
                 </h3>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  {feature.description}
+                  {t(feature.descriptionKey)}
                 </p>
               </div>
             );

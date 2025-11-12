@@ -1,7 +1,9 @@
 import { Rocket } from "lucide-react";
 import googlePlayBadge from "@/assets/google-play-badge.png";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const ComingSoon = () => {
+  const { t } = useLanguage();
   return (
     <section className="py-12 sm:py-16 bg-gradient-to-b from-muted/30 to-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,7 +13,7 @@ export const ComingSoon = () => {
           </div>
           
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight">
-            Coming Soon
+            {t('coming.title')}
           </h2>
           
           <div className="flex justify-center mt-8">
